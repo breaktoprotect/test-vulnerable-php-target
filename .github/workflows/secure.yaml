@@ -6,8 +6,8 @@ on:
   
   push:
     branches:
-      # Trigger on any branches except main
-      - '!main'
+      - '*'
+      - '!main' # Trigger on any branches except main
       
   # Allow manual trigger on `Actions` tab
   workflow_dispatch:
