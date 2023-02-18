@@ -3,7 +3,13 @@ name: Security Scanning Pipeline
 on:
   pull_request:
     branches: [main]
-    
+  
+  push:
+    branches:
+      # Trigger on any branches except main
+      - '!main'
+      
+  # Allow manual trigger on `Actions` tab
   workflow_dispatch:
 
 jobs:
