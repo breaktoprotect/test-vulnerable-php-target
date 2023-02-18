@@ -1,0 +1,12 @@
+name: Security Scanning Pipeline
+
+on:
+  pull_request:
+    branches: [main]
+    
+  workflow_dispatch:
+
+jobs:
+  security-pipeline:
+    uses: breaktoprotect/simple-php-security-pipeline/.github/workflows/php-security-pipeline.yaml@main
+    secrets: inherit
