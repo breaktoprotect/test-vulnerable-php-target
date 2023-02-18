@@ -6,7 +6,7 @@ on:
   
   push:
     branches:
-      - '*'
+      - '**'
       - '!main' # Trigger on any branches except main
       
   # Allow manual trigger on `Actions` tab
