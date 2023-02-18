@@ -8,5 +8,7 @@ on:
 
 jobs:
   security-pipeline:
+    permissions:
+      security-events: write
     uses: breaktoprotect/simple-php-security-pipeline/.github/workflows/php-security-pipeline.yaml@main
     secrets: inherit
